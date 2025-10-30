@@ -1,0 +1,88 @@
+/* ===== Container ===== */
+.container {
+  font-family: "Inter", sans-serif;
+  background: #f8fafc;
+  min-height: 100vh;
+  padding: 2rem;
+  color: #0f172a;
+}
+
+/* ===== Header ===== */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0284c7;
+}
+
+.header p {
+  color: #475569;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+
+/* ===== Gallery Grid ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  margin-top: 8%;
+}
+
+/* ===== Card ===== */
+.card {
+  background: white;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  max-width: 320px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  transform: transition(4px);
+  transform: skew(5deg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Image ===== */
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+/* =====      Image Info     ===== */
+.imgTitle{
+  padding: 40px;
+  font-size: 30px;
+  color:  #fbbf24;;
+  display: flex;
+  justify-content: center;
+}
+.imgTitle:hover{
+  color: rgb(88, 5, 5);
+  background-color:  #0284c7;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .inputText {
+    width: 100%;
+  }
+  .image {
+    height: 160px;
+  }
+}

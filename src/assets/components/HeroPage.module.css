@@ -1,0 +1,162 @@
+/* ===== General Container ===== */
+.container {
+  font-family: "Inter", sans-serif;
+  color: #0f172a;
+  background: linear-gradient(to right, #f8fafc, #f1f5f9);
+  background-image: url("/images/img-8.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 1rem 3rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0284c7;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #475569;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+  color: #0284c7;
+}
+
+/* ===== Buttons ===== */
+.btnPrimary {
+  background: #0284c7;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.6rem 1.4rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btnPrimary:hover {
+  background: #0369a1;
+}
+
+.btnSecondary {
+  background: white;
+  border: 1px solid #cbd5e1;
+  color: #0f172a;
+  border-radius: 9999px;
+  padding: 0.6rem 1.4rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btnSecondary:hover {
+  background: #f1f5f9;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4rem 3rem;
+  text-align: left;
+}
+
+.heroText {
+  max-width: 500px;
+}
+
+.heroText h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color : #0369a1;
+  margin-bottom: 1rem;
+}
+
+.heroText p {
+  font-size: 1.05rem;
+  color: #f4f5f7;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.heroImage {
+  width: 300px;
+  height: 300px;
+  /* background: #e2e8f0; */
+  background-image: url('/images/HBD-suffy-GSY.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  font-weight: 500;
+}
+.heroImage p{
+  display: flex;
+  color: #fff;
+  margin-top: 280px;
+  width: 100%;
+  background:#0f172a;
+  color: #f1f5f9;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border: none;
+  border-radius: 1rem;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .heroImage {
+    width: 90%;
+    height: 220px;
+    margin-top: 2rem;
+  }
+
+  .heroButtons {
+    justify-content: center;
+  }
+
+  .navLinks {
+    gap: 1rem;
+  }
+}
