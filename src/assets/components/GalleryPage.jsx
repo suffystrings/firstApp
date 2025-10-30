@@ -8,7 +8,7 @@ export default function GalleryPage() {
     {
       id: 1,
       title: "web Appilication",
-      url: "/images/img-1.jpg",
+      url: "https://github.com/suffystrings/firstApp/blob/main/images/img-1.jpg",
     },
     {
       id: 2,
